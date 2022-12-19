@@ -22,7 +22,8 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-  justify-content: center;
+  /* justify-content: center; */
+  margin-top: 5px;
   gap: 10px;
 }
 
@@ -115,7 +116,7 @@ input:focus {
 }
 .sideVideos {
   display: flex;
-  padding: 20px;
+  padding: 0 20px;
   gap: 10px;
   flex-wrap: nowrap;
 }
@@ -124,37 +125,40 @@ input:focus {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 20px;
-  gap: 10px;
-  height: 123px;
+  padding: 20px 0;
+  justify-content: space-between;
 }
 
+.sideChannel {
+  color: gray;
+}
 .sideStat {
   display: flex;
   justify-content: space-between;
+  color: gray;
 }
 
 .sideTitle {
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .videoSub {
   display: flex;
-  gap: 20px;
-  width: 50%;
+  gap: 10px;
 }
 
 .videoLike {
   display: flex;
   justify-content: space-between;
-  width: 50%;
 }
 
 .subConents {
   display: flex;
   justify-content: space-between;
+
+  flex-wrap: wrap;
 }
 
 .pill {
@@ -189,3 +193,13 @@ input:focus {
   display: flex;
   justify-content: center;
 }
+
+.channelname {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* .suggestionScroll {
+  overflow: scroll;
+  overflow: hidden;
+} */
