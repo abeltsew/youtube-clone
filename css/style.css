@@ -19,12 +19,24 @@
 }
 
 .videoPlayer {
+  display: flex;
+  flex-direction: column;
   width: 80%;
+  justify-content: center;
+  gap: 10px;
 }
 
+.videoTitle {
+  font-size: 20;
+  text-decoration: strong;
+}
 .logo {
   height: 50px;
   width: 100px;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 .icon {
@@ -34,10 +46,12 @@
 div > i {
   padding: 20px;
 }
+
 .search {
   border-color: red;
   border-radius: 40px 0 0 40px;
   border: 1px solid;
+  width: 80%;
 }
 
 .videoSearch {
@@ -48,6 +62,7 @@ div > i {
   padding: 0px 10px;
   border-radius: 40px 0 0 40px;
   height: 30px;
+  width: 100%;
 }
 input:focus {
   color: white;
@@ -63,4 +78,114 @@ input:focus {
 
 .middle {
   display: flex;
+  width: 80%;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+}
+
+.topSuggestions {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .topSuggestions {
+    display: none;
+  }
+  .videoPlayer {
+    width: 100%;
+  }
+  .subConents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .playerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.VideoDetail {
+  width: 100%;
+}
+.sideVideos {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.sideDescription {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
+  gap: 10px;
+  height: 123px;
+}
+
+.sideStat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sideTitle {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.videoSub {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+}
+
+.videoLike {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.subConents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pill {
+  background-color: rgb(112, 108, 108);
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.subscribe {
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.imageProfile {
+  border-radius: 100%;
+}
+
+.channalProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pill > i {
+  padding: 0px 10px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
 }
